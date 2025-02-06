@@ -54,7 +54,7 @@ const App = () => {
       // 5. Se ocorrer um erro na requisição ou no processamento, 
       // este bloco é executado
     } catch (error) {
-      updateHistory(error.message, true);
+      updateHistory("Ocorreu um erro ao processar sua solicitação. Tente novamente mais tarde.", true);
       console.error("Erro ao gerar resposta do bot:", error);
     }
 
@@ -86,7 +86,7 @@ const App = () => {
           <div className="message bot-message">
             <ChatbotIcon/>
             <p className="message-text">
-              Oi, sou TourGenius! <br/> Como posso te ajudar hj?
+              Oi, sou TourGenius! <br/> Como posso te ajudar hoje?😊
             </p>
           </div>
 
